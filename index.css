@@ -3,8 +3,12 @@
 	font-size: 20px;
 }
 
-#matrix{
-	background-image: url(./images/matrix.jpg);
-	background-repeat: no-repeat;
-	padding: 15px;
+.matrix-image{
+	background-image: url(./images/Nv2.gif);
+	background-color: #cccccc;
+	height: 500px;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	position: relative;  
 }
