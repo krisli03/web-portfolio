@@ -1,0 +1,10 @@
+*{
+	font-family: "Courier New", monospace;
+	font-size: 20px;
+}
+
+#matrix{
+	background-image: url(./images/matrix.jpg);
+	background-repeat: no-repeat;
+	padding: 15px;
+}
