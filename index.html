@@ -10,16 +10,18 @@
 	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap" rel="stylesheet">
+
 	<!-- AOS Link -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- CSS Link -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
-<body>
+<body class="matrix-image">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-	  <a class="navbar-brand" href="#">Kris Li</a>
+	  <a class="navbar-brand" href="#about">
+	  	<img src="./images/spiderman.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">Kris Li</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -32,33 +34,24 @@
 	        <a class="nav-link" href="#about">About</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Projects</a>
+	        <a class="nav-link" href="#projects">Projects</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
+	        <a class="nav-link" href="#contact">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
 
-	<div class="matrix-image container-fluid text-center">
-		<section class="row pt-5 pl-5 pr-5" id="home">
+	<div class="container">
+		<section class="row pt-5 pl-5 pr-5" id="home" data-aos="fade-up" data-aos-duration="3000">
 			<div class="col-12">
 			<!-- Content Section -->
 				<div class="col-xl-12 p-0">
-					<div class="container-fluid bg-dark text-light min-vh-100 p-0 p-md-5">
-						<h1>Kris Li</h1>
-						<h3>Full Stack Developer</h3>
-
-					<!-- Profile Description -->
-						<div class="row mt-5">
-							<div class="offset-md-2 col-md-8">
-								<p>
-									
-								</p>
-							</div>
-						</div>
-					<!-- Profile Description end -->
+					<div class="container-fluid bg-dark text-light p-0 p-md-5">
+						<h1 class="intro" style="">This is where it all begins...</h1>
+						
+						<img class="container-fluid mt-md-0 " src="./images/keyboard.gif" width="400" data-aos="zoom-in"> 	
 					</div>
 				</div>	
 		</section>
@@ -66,16 +59,83 @@
 		    <div class="col-12 col-md-6 text-right">
 		        <img class="container-fluid mt-5 mt-md-0 rounded-circle" src="./images/KrisLi.png" width="400" data-aos="zoom-in">> 
 		    </div>
-		    <div class="col-12 col-md-6 mt-3">
-		        <div class="mx-3 p-3 mx-md-0 p-md-5 mb-5 bg-light" id="about-card" data-aos="fade-up" data-aos-duration="3000">>
-		            <h3>About Me</h3>
+		    <div class="col-12 col-md-6 mt-3 text-center">
+		        <div class="mx-3 p-3 mx-md-0 p-md-5 mb-5 bg-dark text-light" id="about-card" data-aos="fade-up" data-aos-duration="3000">
+		            <h2>About Me</h2>
+		            <h4>Kristoffer Li</h4>
+		            <h5>Web Developer</h5>
 		            <p>
 		                An enthusiatic learner and a future Full Stack Developer. Currently undertaking a bootcamp training with <a class="about-link text-decoration-none" target="_blank" href="https://zuitt.co//">Zuitt</a>. I love to do a lot of things during my free time. I would be playing an online game, reading manga/webtoons and lightnovels, watching movies and series and if it permits, hanging out with my friends.
 		            </p>
 		        </div>
 		    </div>
 		</section>
-		<!-- End of Form -->
+		<section class="row mx-3 p-3 mx-md-0 p-md-5 mb-5" id="projects" data-aos="fade-down">
+		    <div class="col-12">
+		        <h3 class="intro">Projects</h3>
+		    </div>
+		    <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+		        <div class="card text-center">
+		            <img src="./images/html.png" class="card-img-top img-fluid" alt="...">
+		            <div class="card-body">
+		            <h5 class="intro card-title">HTML</h5>
+		            <p class="card-text">HTML5 is the latest specification of the HTML language, and represented a major break with previous markup practices. The purpose of the profound changes to the language was to standardize the many new ways in which developers were using it, as well as to encourage a single set of best practices with regards to web development.
+		            </p>
+		            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><button class="btn btn-dark">View Project</button></a>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+		        <div class="card text-center">
+		            <img src="./images/bootstrap.jpg" class="card-img-top img-fluid" alt="...">
+		            <div class="card-body">
+		            <h5 class="intro card-title">Bootstrap</h5>
+		            <p class="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+		            <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank"><button class="btn btn-dark">View Project</button></a>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-12 col-md-6 col-lg-4">
+		        <div class="card text-center">
+		            <img src="./images/node.png" class="card-img-top img-fluid" alt="...">
+		            <div class=" card-body">
+		            <h5 class="intro card-title">Node JS Server</h5>
+		            <p class="card-text">Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine (i.e. V8 engine) and executes JavaScript code outside a web browser, which was designed to build scalable network applications.</p>
+		            <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank"><button class="btn btn-dark">View Project</button></a>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+		<section class="row mx-3 p-3 mx-md-0 p-md-5 mb-5 bg-light shadow" id="contact" data-aos="fade-up" data-aos-duration="3000">
+		    <div class="col-12">
+		        <h3>Contact Me!</h3>
+		    </div>
+		    <div class="col-12 col-lg-6">
+		        <form>
+		            <div class="form-group">
+		                <input type="text" class="form-control" id="username" placeholder="Name">
+		            </div>
+		            <div class="form-group">
+		                <input type="email" class="form-control" id="email" placeholder="E-mail">
+		            </div>
+		            <div class="form-group">
+		                <input type="number" class="form-control" id="contact-number" placeholder="Contact Number">
+		            </div>
+		            <div class="form-group">
+		                <textarea class="form-control" name="message" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+		            </div>
+		            <div class="form-group">
+		                <button type="button" class="btn btn-dark" id="send-msg-btn">Send Message</button>
+		            </div>
+		        </form>
+		    </div>
+		    <div class="col-12 col-lg-6 mapouter">
+		    	<div class="gmap_canvas">
+		    		<iframe width="500" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=urban%20deca%20tower%20edsa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		    		<a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:500px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:500px;}</style>
+		    	</div>
+		    </div>
+		</section>
 	</div>
 
 
