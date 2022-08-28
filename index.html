@@ -19,9 +19,10 @@
 	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body class="matrix-image">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom sticky-top">
 	  <a class="navbar-brand" href="#about">
-	  	<img src="./images/spiderman.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">Kris Li</a>
+	  	<img src="./images/Kristoffer Li.png" width="30" height="30" class="d-inline-block align-top mr-2 rounded-circle" alt="">Kris</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -43,27 +44,28 @@
 	  </div>
 	</nav>
 
-	<div class="container">
-		<section class="row pt-5 pl-5 pr-5" id="home" data-aos="fade-up" data-aos-duration="3000">
-			<div class="col-12">
-			<!-- Content Section -->
-				<div class="col-xl-12 p-0">
-					<div class="container-fluid bg-dark text-light p-0 p-md-5">
-						<h1 class="intro" style="">This is where it all begins...</h1>
-						
-						<img class="container-fluid mt-md-0 " src="./images/keyboard.gif" width="400" data-aos="zoom-in"> 	
-					</div>
-				</div>	
-		</section>
-		<section class="matrix-image row p-5 d-flex align-items-md-center" id="about">
+	<main class="container">
+		<section class="row pt-3" id="home">
+            <div class="col-12">
+            	<!-- Home Section -->
+                <div class="jumbotron bg-dark text-light shadow">
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        <h1 class="intro">My name is Kris </h1>
+                        <h3><span>I'm a Web Developer</span></h3>
+                       
+                        <a href="#about"><button class="btn btn-lg btn-dark" id="first-btn">Learn More</button></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+		<section class="row p-5 d-flex align-items-md-center" id="about">
 		    <div class="col-12 col-md-6 text-right">
-		        <img class="container-fluid mt-5 mt-md-0 rounded-circle" src="./images/KrisLi.png" width="400" data-aos="zoom-in">> 
+		        <img class="container-fluid mt-5 mt-md-0 rounded-circle" src="./images/KrisLi.png" data-aos="zoom-in"> 
 		    </div>
 		    <div class="col-12 col-md-6 mt-3 text-center">
-		        <div class="mx-3 p-3 mx-md-0 p-md-5 mb-5 bg-dark text-light" id="about-card" data-aos="fade-up" data-aos-duration="3000">
-		            <h2>About Me</h2>
-		            <h4>Kristoffer Li</h4>
-		            <h5>Web Developer</h5>
+		        <div class="text-justify bg-dark text-light" id="about-card" data-aos="fade-up" data-aos-duration="3000">
+		            <h2 class="text-center">About Me</h2>
 		            <p>
 		                An enthusiatic learner and a future Full Stack Developer. Currently undertaking a bootcamp training with <a class="about-link text-decoration-none" target="_blank" href="https://zuitt.co//">Zuitt</a>. I love to do a lot of things during my free time. I would be playing an online game, reading manga/webtoons and lightnovels, watching movies and series and if it permits, hanging out with my friends.
 		            </p>
@@ -106,7 +108,7 @@
 		        </div>
 		    </div>
 		</section>
-		<section class="row mx-3 p-3 mx-md-0 p-md-5 mb-5 bg-light shadow" id="contact" data-aos="fade-up" data-aos-duration="3000">
+		<section class="row bg-light shadow" id="contact" data-aos="fade-up" data-aos-duration="3000">
 		    <div class="col-12">
 		        <h3>Contact Me!</h3>
 		    </div>
@@ -127,16 +129,11 @@
 		            <div class="form-group">
 		                <button type="button" class="btn btn-dark" id="send-msg-btn">Send Message</button>
 		            </div>
-		        </form>
-		    </div>
-		    <div class="col-12 col-lg-6 mapouter">
-		    	<div class="gmap_canvas">
-		    		<iframe width="500" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=urban%20deca%20tower%20edsa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-		    		<a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:500px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:500px;}</style>
-		    	</div>
+		        	
+		    	</form>
 		    </div>
 		</section>
-	</div>
+	</main>
 
 
 	<!-- Bootstrap Javascript -->
@@ -149,6 +146,9 @@
 	<script>
 	  AOS.init();
 	</script>
+
+	<script src="assets/vendor/typed.js/typed.min.js"></script>
+
 
 </body>
 </html>
